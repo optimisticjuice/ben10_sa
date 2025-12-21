@@ -1,6 +1,7 @@
+import './ben10_alienforce.css'
 function Ben10AlienForce() {
   return (
-    <section className="ben10 alien-force">
+    <section className="ben10alienforce">
       <h1>Ben 10: Alien Force</h1>
       <p>
         Five years later, a more mature Ben Tennyson returns to hero duty

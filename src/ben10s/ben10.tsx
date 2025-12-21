@@ -1,6 +1,8 @@
+import './ben10.css';
+
 function ClassicBen10() {
   return (
-    <section className="ben10 classic">
+    <section className="ben10">
       <h1>Ben 10 (2005)</h1>
       <p>
         Ben Tennyson discovers the Omnitrix, allowing him to transform

@@ -1,3 +1,4 @@
+import './ben10_ultimatealien.css'
 function Ben10UltimateAlien() {
   return (
     <section className="ben10ultimatealien">

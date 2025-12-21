@@ -1,13 +1,14 @@
 import './App.css' // Import CSS for styling
-import Navbar from './components/Navbar'
 import { Ben10Thumbnails } from './components/Selection'
 import { Ben10Layout } from './components/Selection'
+import Navbar from './components/Navbar'
+import { useState } from 'react'
 function App() {
+  const [selectedSeries, setSelectedSeries] = useState<"classic" | "alien-force" | "ultimate-alien" | "omniverse" | "reboot" | null>(null)
   return (
     <div className="App">
-      <Navbar />
-      <Ben10Layout series={null}  />
-      <Ben10Thumbnails onSelect={(series) => console.log(series)} />
+      <Ben10Layout series={selectedSeries} />
+      <Ben10Thumbnails onSelect={setSelectedSeries} > <Navbar onSelect={setSelectedSeries} /></Ben10Thumbnails>
     </div>
   )
 }

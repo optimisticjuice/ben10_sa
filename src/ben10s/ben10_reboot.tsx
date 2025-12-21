@@ -1,3 +1,4 @@
+import "./ben10_reboot.css"
 function Ben10Reboot() {
   return (
     <section className="ben10reboot">

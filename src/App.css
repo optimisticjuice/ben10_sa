@@ -2,3 +2,8 @@
   border: 1px solid rgba(144, 238, 144, 0.3); /* Light green border with 30% opacity */
   min-height: 100vh; /* Full viewport height */
 }
+
+/* Position Ben10Layout 3rem below when nav-container is present in the App */
+.Ben10Layout {
+  margin-top: 17vh; /* 17vh space below the navbar */
+}

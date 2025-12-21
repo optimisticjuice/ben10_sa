@@ -1,5 +1,5 @@
 /* Main app container styling */
-.app-container {
+.nav-container {
   min-height: 100vh; /* Full viewport height */
   padding: 2rem; /* Some padding around content */
   transition: background-color 0.3s ease; /* Smooth transition for background color */

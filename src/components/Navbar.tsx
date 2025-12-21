@@ -1,22 +1,20 @@
-import { useState } from 'react' // Import useState for managing page color state
 import './Navbar.css' // Import CSS for styling
-function Navbar(){
-// State to track whether page should be dark green
-  const [isDarkGreen, setIsDarkGreen] = useState(false)
 
-  // Handle image click to toggle dark green background
-  const handleImageClick = () => {
-    setIsDarkGreen(!isDarkGreen)
-  }
+// Define the props interface for Navbar component
+// onSelect: Required callback function that takes a Ben10Series parameter
+type NavbarProps = {
+  onSelect: (series: "classic" | "alien-force" | "ultimate-alien" | "omniverse" | "reboot") => void;
+};
 
+function Navbar({ onSelect }: NavbarProps) {
   return (
-    <div className={`app-container ${isDarkGreen ? 'dark-green' : ''}`}>
+    <div className="nav-container">
       {/* First clickable Ben10 image positioned at top left */}
       <img 
         src="/ben10right.png" // First Ben10 image
-        alt="Toggle dark green background" // Descriptive alt text for accessibility
+        alt="Ben 10 Classic" // Descriptive alt text for accessibility
         className="top-right-image" // CSS class for positioning and styling
-        onClick={handleImageClick} // Click handler to toggle background color
+        onClick={() => onSelect("classic")} // Click handler to select classic series
         role="button" // Semantic role indicating this acts as a button
         tabIndex={0} // Make image focusable for keyboard accessibility
         draggable="false" // Prevent image from being draggable
@@ -24,17 +22,17 @@ function Navbar(){
         onKeyDown={(e) => {
           // Allow keyboard activation with Enter or Space key
           if (e.key === 'Enter' || e.key === ' ') {
-            handleImageClick()
+            onSelect("classic");
           }
         }}
       />
 
       {/* Second clickable Ben10 image positioned to the right of the first */}
       <img 
-        src="/ben10alienforce.jpeg" // Second Ben10 image (same source)
-        alt="Toggle dark green background" // Descriptive alt text for accessibility
+        src="/ben10alienforce.jpeg" // Second Ben10 image
+        alt="Ben 10 Alien Force" // Descriptive alt text for accessibility
         className="second-ben10-image" // CSS class for positioning and styling
-        onClick={handleImageClick} // Click handler to toggle background color
+        onClick={() => onSelect("alien-force")} // Click handler to select alien-force series
         role="button" // Semantic role indicating this acts as a button
         tabIndex={0} // Make image focusable for keyboard accessibility
         draggable="false" // Prevent image from being draggable
@@ -42,7 +40,7 @@ function Navbar(){
         onKeyDown={(e) => {
           // Allow keyboard activation with Enter or Space key
           if (e.key === 'Enter' || e.key === ' ') {
-            handleImageClick()
+            onSelect("alien-force");
           }
         }}
       />
@@ -50,9 +48,9 @@ function Navbar(){
       {/* Third clickable Ultimate Alien image positioned to the right of the second */}
       <img 
         src="/ultimate_alien.png" // Ultimate Alien image
-        alt="Toggle dark green background" // Descriptive alt text for accessibility
+        alt="Ben 10 Ultimate Alien" // Descriptive alt text for accessibility
         className="ultimate-alien-image" // CSS class for positioning and styling
-        onClick={handleImageClick} // Click handler to toggle background color
+        onClick={() => onSelect("ultimate-alien")} // Click handler to select ultimate-alien series
         role="button" // Semantic role indicating this acts as a button
         tabIndex={0} // Make image focusable for keyboard accessibility
         draggable="false" // Prevent image from being draggable
@@ -60,17 +58,17 @@ function Navbar(){
         onKeyDown={(e) => {
           // Allow keyboard activation with Enter or Space key
           if (e.key === 'Enter' || e.key === ' ') {
-            handleImageClick()
+            onSelect("ultimate-alien");
           }
         }}
       />
 
-      {/* Fourth clickable Omniverse image positioned to the right of the third */}
+      {/* Fourth clickable Omniverse image positioned to the right of the Ultimate Alien image */}
       <img 
         src="/ben10omniverse.jpg" // Omniverse image
-        alt="Toggle dark green background" // Descriptive alt text for accessibility
+        alt="Ben 10 Omniverse" // Descriptive alt text for accessibility
         className="omniverse-image" // CSS class for positioning and styling
-        onClick={handleImageClick} // Click handler to toggle background color
+        onClick={() => onSelect("omniverse")} // Click handler to select omniverse series
         role="button" // Semantic role indicating this acts as a button
         tabIndex={0} // Make image focusable for keyboard accessibility
         draggable="false" // Prevent image from being draggable
@@ -78,17 +76,17 @@ function Navbar(){
         onKeyDown={(e) => {
           // Allow keyboard activation with Enter or Space key
           if (e.key === 'Enter' || e.key === ' ') {
-            handleImageClick()
+            onSelect("omniverse");
           }
         }}
       />
 
-      {/* Fifth clickable Reboot image positioned to the right of the fourth */}
+      {/* Fifth clickable Reboot image positioned to the right of the Omniverse image */}
       <img 
         src="/reboot.jpeg" // Reboot image
-        alt="Toggle dark green background" // Descriptive alt text for accessibility
+        alt="Ben 10 Reboot" // Descriptive alt text for accessibility
         className="reboot-image" // CSS class for positioning and styling
-        onClick={handleImageClick} // Click handler to toggle background color
+        onClick={() => onSelect("reboot")} // Click handler to select reboot series
         role="button" // Semantic role indicating this acts as a button
         tabIndex={0} // Make image focusable for keyboard accessibility
         draggable="false" // Prevent image from being draggable
@@ -96,12 +94,12 @@ function Navbar(){
         onKeyDown={(e) => {
           // Allow keyboard activation with Enter or Space key
           if (e.key === 'Enter' || e.key === ' ') {
-            handleImageClick()
+            onSelect("reboot");
           }
         }}
       />
-      
     </div>
-  )
+  );
 }
+
 export default Navbar;

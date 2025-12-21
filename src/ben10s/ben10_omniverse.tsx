@@ -1,3 +1,4 @@
+import "./ben10_omniverse.css"
 function Ben10Omniverse() {
   return (
     <section className="ben10omniverse">
