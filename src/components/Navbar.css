@@ -13,9 +13,9 @@
 /* Top left image positioning and styling */
 .top-right-image {
   position: fixed; /* Fixed positioning relative to viewport */
-  top: 2rem; /* 20px from top */
+  top: 1rem; /* 1rem from top */
   left: 1.5vw; /* Start with 1vw gap from left edge */
-  width: calc(17vw); /* Adjust width for 99vw total coverage */
+  width: calc(17.5vw); /* Adjust width for 99vw total coverage */
   height: 15vh; /* 15% of viewport height */
   max-width: none; /* Remove max-width constraint */
   min-width: none; /* Remove min-width constraint */
@@ -31,7 +31,7 @@
 /* Second Ben10 image positioned to the right of the first image */
 .second-ben10-image {
   position: fixed; /* Fixed positioning relative to viewport */
-  top: 2rem; /* Same vertical position as first image */
+  top: 1rem; /* Same vertical position as first image */
   left: calc(19.8vw - 0.8vw + 0.8vw ); /* First image position + width + 1vw gap */
   width: calc(19vw); /* Adjust width for 99vw total coverage */
   height: 15vh; /* 15% of viewport height */
@@ -69,7 +69,7 @@
 /* Ultimate Alien image positioned to the right of the second image */
 .ultimate-alien-image {
   position: fixed; /* Fixed positioning relative to viewport */
-  top: 2rem; /* Same vertical position as other images */
+  top: 1rem; /* Same vertical position as other images */
   left: calc(19.8vw - 0.8vw + 0.8vw + 19.8vw - 0.8vw + 1vw); /* Previous images + gaps */
   width: calc(19.3vw); /* Adjust width for 99vw total coverage */
   height: 15vh; /* 15% of viewport height */
@@ -87,7 +87,7 @@
 /* Omniverse image positioned to the right of the Ultimate Alien image */
 .omniverse-image {
   position: fixed; /* Fixed positioning relative to viewport */
-  top: 2rem; /* Same vertical position as other images */
+  top: 1rem; /* Same vertical position as other images */
   left: calc(19.8vw - 0.8vw + 0.8vw + 19.8vw - 0.8vw + 1vw + 19.8vw - 0.8vw + 1vw); /* Previous images + gaps */
   width: calc(19.8vw - 0.8vw); /* Adjust width for 99vw total coverage */
   height: 15vh; /* 15% of viewport height */
@@ -105,7 +105,7 @@
 /* Reboot image positioned to the right of the Omniverse image */
 .reboot-image {
   position: fixed; /* Fixed positioning relative to viewport */
-  top: 2rem; /* Same vertical position as other images */
+  top: 1rem; /* Same vertical position as other images */
   left: calc(19.8vw - 0.8vw + 1vw + 19.8vw - 0.8vw + 1vw + 19.8vw - 0.8vw + 1vw + 19.8vw - 1vw + 0.8vw); /* Previous images + gaps */
   width: calc(17.8vw); /* Adjust width for 99vw total coverage */
   height: 15vh; /* 15% of viewport height */
