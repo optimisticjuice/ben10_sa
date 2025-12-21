@@ -1,0 +1,132 @@
+/* Main app container styling */
+.app-container {
+  min-height: 100vh; /* Full viewport height */
+  padding: 2rem; /* Some padding around content */
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+/* Dark green background class */
+.app-container.dark-green {
+  background-color: #0d4f0d; /* Dark green color */
+}
+
+/* Top left image positioning and styling */
+.top-right-image {
+  position: fixed; /* Fixed positioning relative to viewport */
+  top: 2rem; /* 20px from top */
+  left: 1.5vw; /* Start with 1vw gap from left edge */
+  width: calc(17vw); /* Adjust width for 99vw total coverage */
+  height: 15vh; /* 15% of viewport height */
+  max-width: none; /* Remove max-width constraint */
+  min-width: none; /* Remove min-width constraint */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  border-radius: 8px; /* Add rounded corners back for better separation */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth hover effects */
+  z-index: 1000; /* Ensure image stays on top of other content */
+  will-change: width; /* Optimize for width changes */
+  contain: layout; /* Optimize rendering for layout changes */
+}
+
+/* Second Ben10 image positioned to the right of the first image */
+.second-ben10-image {
+  position: fixed; /* Fixed positioning relative to viewport */
+  top: 2rem; /* Same vertical position as first image */
+  left: calc(19.8vw - 0.8vw + 0.8vw ); /* First image position + width + 1vw gap */
+  width: calc(19vw); /* Adjust width for 99vw total coverage */
+  height: 15vh; /* 15% of viewport height */
+  max-width: none; /* Remove max-width constraint */
+  min-width: none; /* Remove min-width constraint */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  border-radius: 8px; /* Add rounded corners back for better separation */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth hover effects */
+  z-index: 1000; /* Ensure image stays on top of other content */
+  will-change: width; /* Optimize for width changes */
+  contain: layout; /* Optimize rendering for layout changes */
+}
+
+/* Hover effect for all images */
+.top-right-image:hover,
+.second-ben10-image:hover,
+.ultimate-alien-image:hover,
+.omniverse-image:hover,
+.reboot-image:hover {
+  transform: scale(1.04); /* Slightly enlarge on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+/* Focus styles for keyboard accessibility */
+.top-right-image:focus,
+.second-ben10-image:focus,
+.ultimate-alien-image:focus,
+.omniverse-image:focus,
+.reboot-image:focus {
+  outline: 2px solid #4CAF50; /* Green outline for focus */
+  outline-offset: 2px; /* Space between outline and image */
+}
+
+/* Ultimate Alien image positioned to the right of the second image */
+.ultimate-alien-image {
+  position: fixed; /* Fixed positioning relative to viewport */
+  top: 2rem; /* Same vertical position as other images */
+  left: calc(19.8vw - 0.8vw + 0.8vw + 19.8vw - 0.8vw + 1vw); /* Previous images + gaps */
+  width: calc(19.3vw); /* Adjust width for 99vw total coverage */
+  height: 15vh; /* 15% of viewport height */
+  max-width: none; /* Remove max-width constraint */
+  min-width: none; /* Remove min-width constraint */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  border-radius: 8px; /* Add rounded corners back for better separation */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth hover effects */
+  z-index: 1000; /* Ensure image stays on top of other content */
+  will-change: width; /* Optimize for width changes */
+  contain: layout; /* Optimize rendering for layout changes */
+}
+
+/* Omniverse image positioned to the right of the Ultimate Alien image */
+.omniverse-image {
+  position: fixed; /* Fixed positioning relative to viewport */
+  top: 2rem; /* Same vertical position as other images */
+  left: calc(19.8vw - 0.8vw + 0.8vw + 19.8vw - 0.8vw + 1vw + 19.8vw - 0.8vw + 1vw); /* Previous images + gaps */
+  width: calc(19.8vw - 0.8vw); /* Adjust width for 99vw total coverage */
+  height: 15vh; /* 15% of viewport height */
+  max-width: none; /* Remove max-width constraint */
+  min-width: none; /* Remove min-width constraint */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  border-radius: 8px; /* Add rounded corners back for better separation */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth hover effects */
+  z-index: 1000; /* Ensure image stays on top of other content */
+  will-change: width; /* Optimize for width changes */
+  contain: layout; /* Optimize rendering for layout changes */
+}
+
+/* Reboot image positioned to the right of the Omniverse image */
+.reboot-image {
+  position: fixed; /* Fixed positioning relative to viewport */
+  top: 2rem; /* Same vertical position as other images */
+  left: calc(19.8vw - 0.8vw + 1vw + 19.8vw - 0.8vw + 1vw + 19.8vw - 0.8vw + 1vw + 19.8vw - 1vw + 0.8vw); /* Previous images + gaps */
+  width: calc(17.8vw); /* Adjust width for 99vw total coverage */
+  height: 15vh; /* 15% of viewport height */
+  max-width: none; /* Remove max-width constraint */
+  min-width: none; /* Remove min-width constraint */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  border-radius: 8px; /* Add rounded corners back for better separation */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth hover effects */
+  z-index: 1000; /* Ensure image stays on top of other content */
+  will-change: width; /* Optimize for width changes */
+  contain: layout; /* Optimize rendering for layout changes */
+}
+
+.content {
+  margin: 0 auto; /* Center content */
+  text-align: center; /* Center text */
+  color: #333; /* Default text color */
+}
+
+/* Text color when background is dark green */
+.dark-green .content {
+  color: white; /* White text for dark background */
+}
