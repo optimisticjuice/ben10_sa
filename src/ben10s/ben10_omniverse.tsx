@@ -1,15 +1,10 @@
 import "./ben10_omniverse.css"
+import Ben10OmniverseComponent from '../Ben10Omniverse/ben10omniverse.tsx';
 function Ben10Omniverse() {
   return (
-    <section className="ben10omniverse">
-      <h1>Ben 10: Omniverse</h1>
-      <p>
-        With a new art style and timeline-hopping adventures, Omniverse
-        explores Ben’s past and future simultaneously. Partnered with Rook,
-        Ben uncovers hidden secrets of the Omnitrix while facing threats
-        across time, space, and multiple universes.
-      </p>
-    </section>
+   <section className="ben10omniverse">
+     <Ben10OmniverseComponent/>
+   </section>
   );
 }
 export default Ben10Omniverse;

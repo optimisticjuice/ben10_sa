@@ -1,14 +1,9 @@
 import './ben10_ultimatealien.css'
+import Ben10Ultimate from '../Ben10UltimateAlien/ben10ultimatealien';
 function Ben10UltimateAlien() {
   return (
-    <section className="ben10ultimatealien">
-      <h1>Ben 10: Ultimate Alien</h1>
-      <p>
-        Ben gains the Ultimatrix, a powerful evolution of the Omnitrix that
-        allows his alien forms to evolve into ultimate versions. As Ben’s
-        identity becomes public, he must balance fame, responsibility,
-        and increasingly dangerous enemies.
-      </p>
+    <section className="ben10">
+      <Ben10Ultimate/>
     </section>
   );
 }

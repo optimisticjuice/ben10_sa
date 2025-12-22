@@ -1,14 +1,9 @@
 import './ben10_alienforce.css'
+import Ben10AlienForceComponent from '../Ben10AlienForce/ben10alienforce.tsx';
 function Ben10AlienForce() {
   return (
-    <section className="ben10alienforce">
-      <h1>Ben 10: Alien Force</h1>
-      <p>
-        Five years later, a more mature Ben Tennyson returns to hero duty
-        after the Omnitrix reactivates. Teaming up with Gwen and Kevin,
-        Ben faces darker threats, alien invasions, and galaxy-level stakes
-        that push him beyond being just a kid with a watch.
-      </p>
+    <section className="ben10">
+      <Ben10AlienForceComponent/>
     </section>
   );
 }
