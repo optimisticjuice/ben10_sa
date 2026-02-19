@@ -227,22 +227,24 @@
   }
 
   .ultimate-alien-image {
-    width: calc(19vw);
+    width: calc(17vw);
     height: 10vh;
   }
 
   .omniverse-image {
-    width: calc(19vw);
+    width: calc(17vw);
     height: 10vh;
   }
 
   .reboot-image {
-    width: calc(19vw);
+    width: calc(15vw);
     height: 10vh;
   }
 
   .nav-container {
     max-width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
   }
 }
 
@@ -252,12 +254,12 @@
   }
 
   .top-right-image {
-    width: calc(17vw);
+    width: calc(15vw);
     height: 7vh;
   }
 
   .second-ben10-image {
-    width: calc(17vw);
+    width: calc(15vw);
     height: 7vh;
   }
 
@@ -272,11 +274,13 @@
   }
 
   .reboot-image {
-    width: calc(17vw);
+    width: calc(15vw);
     height: 7vh;
   }
 
   .nav-container {
     min-width: 100vw;
+    display: flex;
+    justify-content: left;
   }
 }
