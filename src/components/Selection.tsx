@@ -6,7 +6,7 @@ import Ben10AlienForce from "../ben10s/ben10_alienforce";
 import Ben10UltimateAlien from "../ben10s/ben10_ultimatealien";
 import Ben10Omniverse from "../ben10s/ben10_omniverse";
 import Ben10Reboot from "../ben10s/ben10_reboot";   
-
+import "./Selection.css";
 // Define a union type for all possible Ben10 series options
 // This ensures type safety - only these specific string values are allowed
 type Ben10Series = "classic" | "alien-force" | "ultimate-alien" | "omniverse" | "reboot";

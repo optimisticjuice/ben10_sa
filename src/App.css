@@ -7,3 +7,11 @@
 .Ben10Layout {
   margin-top: 17vh; /* 17vh space below the navbar */
 }
+
+.thumbnail {
+  background-color: black;
+  position: sticky;
+  top: 0;
+  z-index: -1;
+  
+}

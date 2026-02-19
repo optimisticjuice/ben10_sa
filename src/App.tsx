@@ -7,8 +7,8 @@ function App() {
   const [selectedSeries, setSelectedSeries] = useState<"classic" | "alien-force" | "ultimate-alien" | "omniverse" | "reboot" | null>(null)
   return (
     <div className="App">
-      <Ben10Layout series={selectedSeries} />
       <Ben10Thumbnails onSelect={setSelectedSeries} > <Navbar onSelect={setSelectedSeries} /></Ben10Thumbnails>
+      <Ben10Layout series={selectedSeries} />
     </div>
   )
 }
