@@ -1,49 +1,81 @@
 /* Main app container styling */
 .nav-container {
-  min-height: 100vh; /* Full viewport height */
-  transition: background-color 0.3s ease; /* Smooth transition for background color */
+  min-height: 100vh;
+  /* Full viewport height */
+  transition: background-color 0.3s ease;
+  /* Smooth transition for background color */
   max-width: 99vw;
+  display: flex;
 }
 
 /* Dark green background class */
 .app-container.dark-green {
-  background-color: #0d4f0d; /* Dark green color */
+  background-color: #0d4f0d;
+  /* Dark green color */
 }
 
 /* Top left image positioning and styling */
 .top-right-image {
-  position: sticky; /* Sticky positioning relative to viewport */
-  top: 0; /* At the very top */
-  left: 2vw; /* Start with 5vw gap from left edge */
-  width: calc(18vw); /* Adjust width for 99vw total coverage */
-  height: 15vh; /* 15% of viewport height */
-  max-width: none; /* Remove max-width constraint */
-  min-width: none; /* Remove min-width constraint */
-  cursor: pointer; /* Change cursor to pointer on hover */
-  border-radius: 8px; /* Add rounded corners back for better separation */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
-  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth hover effects */
-  z-index: 1000; /* Ensure image stays on top of other content */
-  will-change: width; /* Optimize for width changes */
-  contain: layout; /* Optimize rendering for layout changes */
+  position: sticky;
+  /* Sticky positioning relative to viewport */
+  top: 0;
+  /* At the very top */
+  left: 2vw;
+  /* Start with 5vw gap from left edge */
+  width: calc(18vw);
+  /* Adjust width for 99vw total coverage */
+  height: 15vh;
+  /* 15% of viewport height */
+  max-width: none;
+  /* Remove max-width constraint */
+  min-width: none;
+  /* Remove min-width constraint */
+  cursor: pointer;
+  /* Change cursor to pointer on hover */
+  border-radius: 8px;
+  /* Add rounded corners back for better separation */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /* Subtle shadow */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  /* Smooth hover effects */
+  z-index: 1000;
+  /* Ensure image stays on top of other content */
+  will-change: width;
+  /* Optimize for width changes */
+  contain: layout;
+  /* Optimize rendering for layout changes */
 }
 
 /* Second Ben10 image positioned to the right of the first image */
 .second-ben10-image {
-  position: sticky; /* Sticky positioning relative to viewport */
-  top: 0; /* At the very top */
-  left: calc(22vw); /* First image position + width + 1vw gap */
-  width: calc(18vw); /* Adjust width for 99vw total coverage */
-  height: 15vh; /* 15% of viewport height */
-  max-width: none; /* Remove max-width constraint */
-  min-width: none; /* Remove min-width constraint */
-  cursor: pointer; /* Change cursor to pointer on hover */
-  border-radius: 8px; /* Add rounded corners back for better separation */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
-  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth hover effects */
-  z-index: 1000; /* Ensure image stays on top of other content */
-  will-change: width; /* Optimize for width changes */
-  contain: layout; /* Optimize rendering for layout changes */
+  position: sticky;
+  /* Sticky positioning relative to viewport */
+  top: 0;
+  /* At the very top */
+  left: calc(22vw);
+  /* First image position + width + 1vw gap */
+  width: calc(18vw);
+  /* Adjust width for 99vw total coverage */
+  height: 15vh;
+  /* 15% of viewport height */
+  max-width: none;
+  /* Remove max-width constraint */
+  min-width: none;
+  /* Remove min-width constraint */
+  cursor: pointer;
+  /* Change cursor to pointer on hover */
+  border-radius: 8px;
+  /* Add rounded corners back for better separation */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /* Subtle shadow */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  /* Smooth hover effects */
+  z-index: 1000;
+  /* Ensure image stays on top of other content */
+  will-change: width;
+  /* Optimize for width changes */
+  contain: layout;
+  /* Optimize rendering for layout changes */
 }
 
 /* Hover effect for all images */
@@ -52,8 +84,10 @@
 .ultimate-alien-image:hover,
 .omniverse-image:hover,
 .reboot-image:hover {
-  transform: scale(1.04); /* Slightly enlarge on hover */
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+  transform: scale(1.04);
+  /* Slightly enlarge on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  /* Enhanced shadow on hover */
 }
 
 /* Focus styles for keyboard accessibility */
@@ -62,101 +96,186 @@
 .ultimate-alien-image:focus,
 .omniverse-image:focus,
 .reboot-image:focus {
-  outline: 2px solid #4CAF50; /* Green outline for focus */
-  outline-offset: 2px; /* Space between outline and image */
+  outline: 2px solid #4CAF50;
+  /* Green outline for focus */
+  outline-offset: 2px;
+  /* Space between outline and image */
 }
 
 /* Ultimate Alien image positioned to the right of the second image */
 .ultimate-alien-image {
-  position: sticky; /* Sticky positioning relative to viewport */
-  top: 0; /* At the very top */
-  left: calc(42vw); /* Previous images + gaps */
-  width: calc(16vw); /* Adjust width for 99vw total coverage */
-  height: 15vh; /* 15% of viewport height */
-  max-width: none; /* Remove max-width constraint */
-  min-width: none; /* Remove min-width constraint */
-  cursor: pointer; /* Change cursor to pointer on hover */
-  border-radius: 8px; /* Add rounded corners back for better separation */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
-  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth hover effects */
-  z-index: 1000; /* Ensure image stays on top of other content */
-  will-change: width; /* Optimize for width changes */
-  contain: layout; /* Optimize rendering for layout changes */
+  position: sticky;
+  /* Sticky positioning relative to viewport */
+  top: 0;
+  /* At the very top */
+  left: calc(42vw);
+  /* Previous images + gaps */
+  width: calc(16vw);
+  /* Adjust width for 99vw total coverage */
+  height: 15vh;
+  /* 15% of viewport height */
+  max-width: none;
+  /* Remove max-width constraint */
+  min-width: none;
+  /* Remove min-width constraint */
+  cursor: pointer;
+  /* Change cursor to pointer on hover */
+  border-radius: 8px;
+  /* Add rounded corners back for better separation */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /* Subtle shadow */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  /* Smooth hover effects */
+  z-index: 1000;
+  /* Ensure image stays on top of other content */
+  will-change: width;
+  /* Optimize for width changes */
+  contain: layout;
+  /* Optimize rendering for layout changes */
 }
 
 /* Omniverse image positioned to the right of the Ultimate Alien image */
 .omniverse-image {
-  position: sticky; /* Sticky positioning relative to viewport */
-  top: 0; /* At the very top */
-  left: calc(60vw); /* Previous images + gaps */
-  width: calc(16vw); /* Adjust width for 99vw total coverage */
-  height: 15vh; /* 15% of viewport height */
-  max-width: none; /* Remove max-width constraint */
-  min-width: none; /* Remove min-width constraint */
-  cursor: pointer; /* Change cursor to pointer on hover */
-  border-radius: 8px; /* Add rounded corners back for better separation */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
-  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth hover effects */
-  z-index: 1000; /* Ensure image stays on top of other content */
-  will-change: width; /* Optimize for width changes */
-  contain: layout; /* Optimize rendering for layout changes */
+  position: sticky;
+  /* Sticky positioning relative to viewport */
+  top: 0;
+  /* At the very top */
+  left: calc(60vw);
+  /* Previous images + gaps */
+  width: calc(16vw);
+  /* Adjust width for 99vw total coverage */
+  height: 15vh;
+  /* 15% of viewport height */
+  max-width: none;
+  /* Remove max-width constraint */
+  min-width: none;
+  /* Remove min-width constraint */
+  cursor: pointer;
+  /* Change cursor to pointer on hover */
+  border-radius: 8px;
+  /* Add rounded corners back for better separation */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /* Subtle shadow */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  /* Smooth hover effects */
+  z-index: 1000;
+  /* Ensure image stays on top of other content */
+  will-change: width;
+  /* Optimize for width changes */
+  contain: layout;
+  /* Optimize rendering for layout changes */
 }
 
 /* Reboot image positioned to the right of the Omniverse image */
 .reboot-image {
-  position: sticky; /* Sticky positioning relative to viewport */
-  top: 0; /* At the very top */
-  left: calc(78vw); /* Previous images + gaps */
-  width: calc(18vw); /* Adjust width for 99vw total coverage */
-  height: 15vh; /* 15% of viewport height */
-  max-width: none; /* Remove max-width constraint */
-  min-width: none; /* Remove min-width constraint */
-  cursor: pointer; /* Change cursor to pointer on hover */
-  border-radius: 8px; /* Add rounded corners back for better separation */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
-  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth hover effects */
-  z-index: 1000; /* Ensure image stays on top of other content */
-  will-change: width; /* Optimize for width changes */
-  contain: layout; /* Optimize rendering for layout changes */
+  position: sticky;
+  /* Sticky positioning relative to viewport */
+  top: 0;
+  /* At the very top */
+  left: calc(78vw);
+  /* Previous images + gaps */
+  width: calc(18vw);
+  /* Adjust width for 99vw total coverage */
+  height: 15vh;
+  /* 15% of viewport height */
+  max-width: none;
+  /* Remove max-width constraint */
+  min-width: none;
+  /* Remove min-width constraint */
+  cursor: pointer;
+  /* Change cursor to pointer on hover */
+  border-radius: 8px;
+  /* Add rounded corners back for better separation */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /* Subtle shadow */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  /* Smooth hover effects */
+  z-index: 1000;
+  /* Ensure image stays on top of other content */
+  will-change: width;
+  /* Optimize for width changes */
+  contain: layout;
+  /* Optimize rendering for layout changes */
 }
 
 .content {
-  margin: 0 auto; /* Center content */
-  text-align: center; /* Center text */
-  color: #333; /* Default text color */
+  margin: 0 auto;
+  /* Center content */
+  text-align: center;
+  /* Center text */
+  color: #333;
+  /* Default text color */
 }
 
 /* Text color when background is dark green */
 .dark-green .content {
-  color: white; /* White text for dark background */
+  color: white;
+  /* White text for dark background */
 }
 
 /* Responsive adjustments */
 @media (max-width: 577px) {
   .top-right-image {
     width: calc(19vw);
-    left: 0;
+    left: 0vw;
     height: 10vh;
   }
+
   .second-ben10-image {
     width: calc(19vw);
     height: 10vh;
   }
+
   .ultimate-alien-image {
     width: calc(19vw);
     height: 10vh;
   }
-  
+
   .omniverse-image {
     width: calc(19vw);
     height: 10vh;
   }
-  
+
   .reboot-image {
     width: calc(19vw);
     height: 10vh;
-    right: 0;
   }
+
+  .nav-container {
+    max-width: 100vw;
+  }
+}
+
+@media (max-width: 400px) {
+  nav-container {
+    display: flex;
+  }
+
+  .top-right-image {
+    width: calc(17vw);
+    height: 7vh;
+  }
+
+  .second-ben10-image {
+    width: calc(17vw);
+    height: 7vh;
+  }
+
+  .ultimate-alien-image {
+    width: calc(17vw);
+    height: 7vh;
+  }
+
+  .omniverse-image {
+    width: calc(17vw);
+    height: 7vh;
+  }
+
+  .reboot-image {
+    width: calc(17vw);
+    height: 7vh;
+  }
+
   .nav-container {
     min-width: 100vw;
   }
