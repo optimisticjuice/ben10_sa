@@ -3,3 +3,9 @@
     padding: 1rem;
     border-radius: 8px;
 }
+.ben10 {
+    display: flex;
+    justify-content: center;
+    align-items: right;
+    flex-direction: column;
+}

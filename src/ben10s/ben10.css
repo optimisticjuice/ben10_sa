@@ -1,3 +1,8 @@
-.ben10{
-    margin-top: 19vh;  
+.ben10 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
 }

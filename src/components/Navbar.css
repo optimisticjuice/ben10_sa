@@ -1,8 +1,10 @@
 /* Main app container styling */
 .nav-container {
-  min-height: 100vh; /* Full viewport height */
   transition: background-color 0.3s ease; /* Smooth transition for background color */
   max-width: 99vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 /* Dark green background class */
@@ -12,9 +14,8 @@
 
 /* Top left image positioning and styling */
 .top-right-image {
-  position: sticky; /* Sticky positioning relative to viewport */
+  position: relative; /* Sticky positioning relative to viewport */
   top: 0; /* At the very top */
-  left: 2vw; /* Start with 5vw gap from left edge */
   width: calc(18vw); /* Adjust width for 99vw total coverage */
   height: 15vh; /* 15% of viewport height */
   max-width: none; /* Remove max-width constraint */
@@ -30,10 +31,9 @@
 
 /* Second Ben10 image positioned to the right of the first image */
 .second-ben10-image {
-  position: sticky; /* Sticky positioning relative to viewport */
-  top: 0; /* At the very top */
-  left: calc(22vw); /* First image position + width + 1vw gap */
+  position: relative; /* Sticky positioning relative to viewport */
   width: calc(18vw); /* Adjust width for 99vw total coverage */
+  top: 0; /* At the very top */
   height: 15vh; /* 15% of viewport height */
   max-width: none; /* Remove max-width constraint */
   min-width: none; /* Remove min-width constraint */
@@ -68,10 +68,9 @@
 
 /* Ultimate Alien image positioned to the right of the second image */
 .ultimate-alien-image {
-  position: sticky; /* Sticky positioning relative to viewport */
-  top: 0; /* At the very top */
-  left: calc(42vw); /* Previous images + gaps */
-  width: calc(16vw); /* Adjust width for 99vw total coverage */
+  position: relative; /* Sticky positioning relative to viewport */
+  top: 0; /* At the very top *//* Previous images + gaps */
+  width: calc(18vw); /* Adjust width for 99vw total coverage */
   height: 15vh; /* 15% of viewport height */
   max-width: none; /* Remove max-width constraint */
   min-width: none; /* Remove min-width constraint */
@@ -86,10 +85,9 @@
 
 /* Omniverse image positioned to the right of the Ultimate Alien image */
 .omniverse-image {
-  position: sticky; /* Sticky positioning relative to viewport */
+  position: relative; /* Sticky positioning relative to viewport */
   top: 0; /* At the very top */
-  left: calc(60vw); /* Previous images + gaps */
-  width: calc(16vw); /* Adjust width for 99vw total coverage */
+  width: calc(18vw); /* Adjust width for 99vw total coverage */
   height: 15vh; /* 15% of viewport height */
   max-width: none; /* Remove max-width constraint */
   min-width: none; /* Remove min-width constraint */
@@ -104,9 +102,8 @@
 
 /* Reboot image positioned to the right of the Omniverse image */
 .reboot-image {
-  position: sticky; /* Sticky positioning relative to viewport */
+  position: relative; /* Sticky positioning relative to viewport */
   top: 0; /* At the very top */
-  left: calc(78vw); /* Previous images + gaps */
   width: calc(18vw); /* Adjust width for 99vw total coverage */
   height: 15vh; /* 15% of viewport height */
   max-width: none; /* Remove max-width constraint */
@@ -134,28 +131,32 @@
 /* Responsive adjustments */
 @media (max-width: 577px) {
   .top-right-image {
+    position: relative;
     width: calc(19vw);
-    left: 0;
     height: 10vh;
   }
   .second-ben10-image {
+    position: relative;
     width: calc(19vw);
     height: 10vh;
   }
   .ultimate-alien-image {
+    position: relative;
     width: calc(19vw);
     height: 10vh;
   }
   
   .omniverse-image {
+    position: relative;
     width: calc(19vw);
     height: 10vh;
   }
   
   .reboot-image {
+   position: relative;
+    position: relative;
     width: calc(19vw);
     height: 10vh;
-    right: 0;
   }
   .nav-container {
     min-width: 100vw;
