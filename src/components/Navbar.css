@@ -1,10 +1,10 @@
 /* Main app container styling */
 .nav-container {
   transition: background-color 0.3s ease; /* Smooth transition for background color */
-  max-width: 99vw;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 2vw;
 }
 
 /* Dark green background class */
@@ -139,55 +139,73 @@
 
 /* Responsive adjustments */
 @media (max-width: 577px) {
+  .nav-container {
+    min-width: 100vw;
+    display: flex;
+  }
+
+
   .top-right-image {
-    position: relative;
-    width: calc(19vw);
+    width: calc(17vw);
     height: 10vh;
   }
-
-  .second-ben10-image {
-    position: relative;
-    width: calc(19vw);
+  .second-ben10-image{
+    width: calc(17vw);
     height: 10vh;
   }
-
-  .ultimate-alien-image {
-    position: relative;
-    width: calc(19vw);
+    .ultimate-alien-image {
+    width: calc(17vw);
     height: 10vh;
   }
 
   .omniverse-image {
-    position: relative;
-    width: calc(19vw);
+    width: calc(17vw);
     height: 10vh;
   }
 
   .reboot-image {
-   position: relative;
-    position: relative;
-    width: calc(19vw);
+    width: calc(17vw);
     height: 10vh;
   }
 
-  .ultimate-alien-image {
-    width: calc(17vw);
-    height: 7vh;
+}
+
+
+
+
+
+@media (max-width: 400px) {
+  .nav-container {
+    min-width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+  }
+
+  .top-right-image {
+    width: calc(15vw);
+    height: 5vh;
+    
+  }
+  .second-ben10-image{
+    width: calc(15vw);
+    height: 5vh;
+  }
+    .ultimate-alien-image {
+    width: calc(15vw);
+    height: 5vh;
   }
 
   .omniverse-image {
-    width: calc(17vw);
-    height: 7vh;
+    width: calc(15vw);
+    height: 5vh;
   }
 
   .reboot-image {
     width: calc(15vw);
-    height: 7vh;
+    height: 5vh;
   }
 
-  .nav-container {
-    min-width: 100vw;
-    display: flex;
-    justify-content: left;
-  }
+
 }

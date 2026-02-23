@@ -1,3 +1,11 @@
 .ben10-title {
-    position: relative;
+    position: relative
 }
+.buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    
+}
+
