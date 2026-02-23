@@ -1,7 +1,21 @@
 import "./ben10omniverse.css"
-function Ben10Omniverse(){
+function Ben10(){
     return(
+        <>
         <h1 className="ben10-title">Ben 10 Omniverse</h1>
+        <div className="buttons">
+        <button className="ben10-button">Play</button>
+
+        <button className="ben10-button">Play</button>
+
+        <button className="ben10-button">Play</button>
+
+        <button className="ben10-button">Play</button>
+
+        <button className="ben10-button">Play</button>
+
+        </div>
+        </>
     )
 }
-export default Ben10Omniverse;
+export default Ben10;

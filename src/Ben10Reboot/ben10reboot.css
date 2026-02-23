@@ -1,5 +1,75 @@
 .ben10-title {
-    position: sticky;
-    top: 20vh;
-    left: 5vw;
+    position: relative
+}
+.buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    
+}
+.ben10-button {
+    width: 4rem;
+    height: 3rem;
+    background-color: #000;
+    color: #29af3b;
+    border: none;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    
+    &:hover {
+        background-color: #fff;
+        color: #29af3b;
+        transform: scale(1.1);
+    }
+}
+
+@media (max-width: 768px) {
+ .ben10-button {
+    width: 2rem;
+    height: 2rem;
+    background-color: #000;
+    color: #29af3b;
+    border: none;
+    border-radius: 0.1rem;
+    cursor: pointer;
+    font-size: 0.4rem;
+    font-weight: bold;
+    text-transform: lowercase;
+    transition: all 0.3s ease;
+    
+    &:hover {
+        background-color: #fff;
+        color: #29af3b;
+        transform: scale(1.2);
+    }
+}
+
+}
+
+@media (max-width: 400px) {
+ .ben10-button {
+    width: 1.5rem;
+    height: 1rem;
+    background-color: #000;
+    color: #29af3b;
+    border: none;
+    border-radius: 0.05rem;
+    cursor: pointer;
+    font-size: 0.25rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    
+    &:hover {
+        background-color: #fff;
+        color: #29af3b;
+        transform: scale(1.2);
+    }
+}
+
 }
