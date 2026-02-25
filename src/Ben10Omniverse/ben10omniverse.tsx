@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./ben10omniverse.css"
 import Episodes from "./Buttons/Episodes";
-function Ben10(){
+function Ben10OmniverseComponent(){
     const [showEpisodes, setShowEpisodes] = useState(false);
     return(
         <>
@@ -22,4 +22,4 @@ function Ben10(){
         </>
     )
 }
-export default Ben10;
+export default Ben10OmniverseComponent;

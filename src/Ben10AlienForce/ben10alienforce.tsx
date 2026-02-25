@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./ben10alienforce.css"
 import Episodes from "./Buttons/Episodes";
-function Ben10(){
+function Ben10AlienForceComponent(){
     const [showEpisodes, setShowEpisodes] = useState(false);
     return(
         <>
@@ -22,4 +22,4 @@ function Ben10(){
         </>
     )
 }
-export default Ben10;
+export default Ben10AlienForceComponent;

@@ -1,3 +1,8 @@
-.ben10omniverse{
-    text-align: center;
+.ben10omniverse {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
 }
