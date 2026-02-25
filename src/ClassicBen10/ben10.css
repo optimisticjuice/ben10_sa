@@ -9,7 +9,7 @@
     
 }
 .ben10-button {
-    width: 4rem;
+    width: 5rem !important;
     height: 3rem;
     background-color: #000;
     color: #29af3b;
@@ -20,17 +20,17 @@
     font-weight: bold;
     text-transform: uppercase;
     transition: all 0.3s ease;
-    
-    &:hover {
-        background-color: #fff;
-        color: #29af3b;
-        transform: scale(1.1);
-    }
+}
+
+.ben10-button:hover {
+    background-color: #fff;
+    color: #29af3b;
+    transform: scale(1.1);
 }
 
 @media (max-width: 768px) {
  .ben10-button {
-    width: 2rem;
+    width: 4rem !important;
     height: 2rem;
     background-color: #000;
     color: #29af3b;
@@ -41,19 +41,19 @@
     font-weight: bold;
     text-transform: lowercase;
     transition: all 0.3s ease;
-    
-    &:hover {
-        background-color: #fff;
-        color: #29af3b;
-        transform: scale(1.2);
-    }
+}
+
+.ben10-button:hover {
+    background-color: #fff;
+    color: #29af3b;
+    transform: scale(1.2);
 }
 
 }
 
 @media (max-width: 400px) {
  .ben10-button {
-    width: 1.5rem;
+    width: 3rem !important;
     height: 1rem;
     background-color: #000;
     color: #29af3b;
@@ -64,12 +64,12 @@
     font-weight: bold;
     text-transform: uppercase;
     transition: all 0.3s ease;
-    
-    &:hover {
-        background-color: #fff;
-        color: #29af3b;
-        transform: scale(1.2);
-    }
+}
+
+.ben10-button:hover {
+    background-color: #fff;
+    color: #29af3b;
+    transform: scale(1.2);
 }
 
 }
