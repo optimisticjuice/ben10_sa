@@ -54,7 +54,6 @@ function Episodes() {
     fetchEpisodes();
   }, []);
 
-  console.log(episodes)
   return (
     <div className="episodes-container">
         {

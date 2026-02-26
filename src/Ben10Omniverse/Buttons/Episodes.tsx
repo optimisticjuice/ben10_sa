@@ -11,12 +11,12 @@ function Episodes() {
     async function fetchEpisodes() {
       try {
         // Categories for original series seasons
-        const categories = [
-          "Category:Ben 10 Season 1 Episodes",
-          "Category:Ben 10 Season 2 Episodes", 
-          "Category:Ben 10 Season 3 Episodes",
-          "Category:Ben 10 Season 4 Episodes",
-        ];
+      const categories = [
+        "Category:Ben 10: Omniverse Season 1 Episodes",
+        "Category:Ben 10: Omniverse Season 2 Episodes", 
+        "Category:Ben 10: Omniverse Season 3 Episodes",
+        "Category:Ben 10: Omniverse Season 4 Episodes",
+];
 
         const allTitles: string[] = [];
 
@@ -54,7 +54,6 @@ function Episodes() {
     fetchEpisodes();
   }, []);
 
-  console.log(episodes)
   return (
     <div className="episodes-container">
         {
