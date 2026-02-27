@@ -28,10 +28,11 @@ details {
   margin: 1rem 0;
   border: 2px solid #29af3b;
   border-radius: 10px;
-  overflow: hidden;
+  overflow: visible;
   background: linear-gradient(135deg, rgba(0, 0, 0, 0.9) 0%, rgba(41, 175, 59, 0.1) 100%);
   transition: all 0.3s ease;
   position: relative;
+  max-height: none;
 }
 
 /* Details Summary - Bold and Centered */
@@ -82,7 +83,7 @@ details[open] ~ details {
   opacity: 0.3;
   pointer-events: none;
   filter: blur(2px);
-  transform: scale(0.95);
+  transform: scale(1.11);
 }
 
 /* Table Body Styling */
@@ -105,7 +106,7 @@ details[open] ~ details {
 .episodes-table td {
   padding: 1rem 1.5rem;
   color: #ffffff;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   border: 1px solid rgba(41, 175, 59, 0.2);
   text-shadow: 0 0 5px rgba(41, 175, 59, 0.5);
 }

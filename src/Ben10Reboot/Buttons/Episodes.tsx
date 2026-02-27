@@ -391,6 +391,10 @@ function Episodes() {
                             <td className="episode-number">Episode Number : {episodes.indexOf(episodes[79]) + 1} </td> 
                             <td className="episode-title">{episodes[61]}</td>
                         </tr>
+                        <tr>
+                            <td className="episode-number">Episode Number : {episodes.indexOf(episodes[79]) + 1} </td> 
+                            <td className="episode-title">{episodes[61]}</td>
+                        </tr>
                         </details>
                         </>
                             }
