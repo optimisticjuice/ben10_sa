@@ -53,7 +53,7 @@ function Episodes() {
 
     fetchEpisodes();
   }, []);
-
+  console.log(episodes);
   return (
     <div className="episodes-container">
         {
@@ -69,23 +69,23 @@ function Episodes() {
                         <tr>
                             
                             <td className="episode-number">Episode Number : {episodes.indexOf(episodes[0]) + 1} </td> 
-                            <td className="episode-title">{episodes[1]}</td>
+                            <td className="episode-title">{episodes[37]}</td>
                         </tr>
                         <tr>
                             <td className="episode-number">Episode Number : {episodes.indexOf(episodes[1]) + 1} </td> 
-                            <td className="episode-title">{episodes[12]}</td>
+                            <td className="episode-title">{episodes[33]}</td>
                         </tr>
                         <tr>
                             <td className="episode-number">Episode Number : {episodes.indexOf(episodes[2]) + 1} </td> 
-                            <td className="episode-title">{episodes[10]}</td>
+                            <td className="episode-title">{episodes[7]}</td>
                         </tr>
                         <tr>
                             <td className="episode-number">Episode Number : {episodes.indexOf(episodes[3]) + 1} </td> 
-                            <td className="episode-title">{episodes[6]}</td>
+                            <td className="episode-title">{episodes[34]}</td>
                         </tr>
                         <tr>
                             <td className="episode-number">Episode Number : {episodes.indexOf(episodes[4]) + 1} </td> 
-                            <td className="episode-title">{episodes[2]}</td>
+                            <td className="episode-title">{episodes[30]}</td>
                         </tr>
                         <tr>
                             <td className="episode-number">Episode Number : {episodes.indexOf(episodes[5]) + 1} </td> 
@@ -93,31 +93,31 @@ function Episodes() {
                         </tr>
                             <tr>
                             <td className="episode-number">Episode Number : {episodes.indexOf(episodes[6]) + 1} </td> 
-                            <td className="episode-title">{episodes[3]}</td>
+                            <td className="episode-title">{episodes[13]}</td>
                         </tr>
                         <tr>
                             <td className="episode-number">Episode Number : {episodes.indexOf(episodes[7]) + 1} </td> 
-                            <td className="episode-title">{episodes[11]}</td>
+                            <td className="episode-title">{episodes[24]}</td>
                         </tr>
                         <tr>
                             <td className="episode-number">Episode Number : {episodes.indexOf(episodes[8]) + 1} </td> 
-                            <td className="episode-title">{episodes[9]}</td>
+                            <td className="episode-title">{episodes[32]}</td>
                         </tr>
                         <tr>
                             <td className="episode-number">Episode Number : {episodes.indexOf(episodes[9]) + 1} </td> 
-                            <td className="episode-title">{episodes[5]}</td>
+                            <td className="episode-title">{episodes[14]}</td>
                         </tr>
                         <tr>
                             <td className="episode-number">Episode Number : {episodes.indexOf(episodes[10]) + 1} </td> 
-                            <td className="episode-title">{episodes[0]}</td>
+                            <td className="episode-title">{episodes[36]}</td>
                         </tr>
                         <tr>
                             <td className="episode-number">Episode Number : {episodes.indexOf(episodes[11]) + 1} </td> 
-                            <td className="episode-title">{episodes[8]}</td>
+                            <td className="episode-title">{episodes[27]}</td>
                         </tr>
                         <tr>
                             <td className="episode-number">Episode Number : {episodes.indexOf(episodes[12]) + 1} </td> 
-                            <td className="episode-title">{episodes[7]}</td>
+                            <td className="episode-title">{episodes[10]}</td>
                         </tr>
                         </details>
                         <details>
