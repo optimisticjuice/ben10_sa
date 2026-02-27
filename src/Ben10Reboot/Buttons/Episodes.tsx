@@ -119,32 +119,29 @@ function Episodes() {
                             <td className="episode-number">Episode Number : {episodes.indexOf(episodes[12]) + 1} </td> 
                             <td className="episode-title">{episodes[10]}</td>
                         </tr>
-                        </details>
-                        <details>
-                            <summary>Season 2</summary>
                         <tr>
                             <td className="episode-number">Episode Number : {episodes.indexOf(episodes[13]) + 1} </td> 
-                            <td className="episode-title">{episodes[24]}</td>
+                            <td className="episode-title">{episodes[8]}</td>
                         </tr>
                         <tr>
                             <td className="episode-number">Episode Number : {episodes.indexOf(episodes[14]) + 1} </td> 
-                            <td className="episode-title">{episodes[20]}</td>
+                            <td className="episode-title">{episodes[2]}</td>
                         </tr>
                         <tr>
                             <td className="episode-number">Episode Number : {episodes.indexOf(episodes[15]) + 1} </td> 
-                            <td className="episode-title">{episodes[16]}</td>
+                            <td className="episode-title">{episodes[23]}</td>
                         </tr>
                         <tr>
                             <td className="episode-number">Episode Number : {episodes.indexOf(episodes[16]) + 1} </td> 
-                            <td className="episode-title">{episodes[19]}</td>
+                            <td className="episode-title">{episodes[17]}</td>
                         </tr>
                         <tr>
                             <td className="episode-number">Episode Number : {episodes.indexOf(episodes[17]) + 1} </td> 
-                            <td className="episode-title">{episodes[18]}</td>
+                            <td className="episode-title">{episodes[5]}</td>
                         </tr>
                         <tr>
                             <td className="episode-number">Episode Number : {episodes.indexOf(episodes[18]) + 1} </td> 
-                            <td className="episode-title">{episodes[21]}</td>
+                            <td className="episode-title">{episodes[12]}</td>
                         </tr>
                         <tr>
                             <td className="episode-number">Episode Number : {episodes.indexOf(episodes[19]) + 1} </td> 
@@ -152,97 +149,95 @@ function Episodes() {
                         </tr>
                         <tr>
                             <td className="episode-number">Episode Number : {episodes.indexOf(episodes[20]) + 1} </td> 
-                            <td className="episode-title">{episodes[25]}</td>
-                        </tr>
-                        <tr>
-                            <td className="episode-number">Episode Number : {episodes.indexOf(episodes[21]) + 1} </td> 
-                            <td className="episode-title">{episodes[14]}</td>
-                        </tr>
-                        <tr>
-                            <td className="episode-number">Episode Number : {episodes.indexOf(episodes[22]) + 1} </td> 
-                            <td className="episode-title">{episodes[23]}</td>
-                        </tr>
-                        <tr>
-                            <td className="episode-number">Episode Number : {episodes.indexOf(episodes[23]) + 1} </td> 
-                            <td className="episode-title">{episodes[22]}</td>
-                        </tr>
-                        <tr>
-                            <td className="episode-number">Episode Number : {episodes.indexOf(episodes[24]) + 1} </td> 
-                            <td className="episode-title">{episodes[15]}</td>
-                        </tr>
-                        <tr>
-                            <td className="episode-number">Episode Number : {episodes.indexOf(episodes[25]) + 1} </td> 
-                            <td className="episode-title">{episodes[13]}</td>
-                        </tr>
-                        </details>
-                        <details>
-                            <summary> Season 3</summary>
-                        <tr>
-                            <td className="episode-number">Episode Number : {episodes.indexOf(episodes[26]) + 1} </td> 
-                            <td className="episode-title">{episodes[32]}</td>
-                        </tr>
-                        <tr>
-                            <td className="episode-number">Episode Number : {episodes.indexOf(episodes[27]) + 1} </td> 
-                            <td className="episode-title">{episodes[28]}</td>
-                        </tr>
-                        <tr>
-                            <td className="episode-number">Episode Number : {episodes.indexOf(episodes[28]) + 1} </td> 
                             <td className="episode-title">{episodes[26]}</td>
                         </tr>
                         <tr>
-                            <td className="episode-number">Episode Number : {episodes.indexOf(episodes[29]) + 1} </td> 
-                            <td className="episode-title">{episodes[31]}</td>
+                            <td className="episode-number">Episode Number : {episodes.indexOf(episodes[21]) + 1} </td> 
+                            <td className="episode-title">{episodes[6]}</td>
                         </tr>
                         <tr>
-                            <td className="episode-number">Episode Number : {episodes.indexOf(episodes[30]) + 1} </td> 
-                            <td className="episode-title">{episodes[29]}</td>
+                            <td className="episode-number">Episode Number : {episodes.indexOf(episodes[22]) + 1} </td> 
+                            <td className="episode-title">{episodes[0]}</td>
                         </tr>
                         <tr>
-                            <td className="episode-number">Episode Number : {episodes.indexOf(episodes[31]) + 1} </td> 
-                            <td className="episode-title">{episodes[30]}</td>
+                            <td className="episode-number">Episode Number : {episodes.indexOf(episodes[23]) + 1} </td> 
+                            <td className="episode-title">{episodes[28]}</td>
                         </tr>
                         <tr>
-                            <td className="episode-number">Episode Number : {episodes.indexOf(episodes[32]) + 1} </td> 
-                            <td className="episode-title">{episodes[34]}</td>
+                            <td className="episode-number">Episode Number : {episodes.indexOf(episodes[24]) + 1} </td> 
+                            <td className="episode-title">{episodes[22]}</td>
                         </tr>
                         <tr>
-                            <td className="episode-number">Episode Number : {episodes.indexOf(episodes[33]) + 1} </td> 
+                            <td className="episode-number">Episode Number : {episodes.indexOf(episodes[25]) + 1} </td> 
+                            <td className="episode-title">{episodes[1]}</td>
+                        </tr>
+                        <tr>
+                            <td className="episode-number">Episode Number : {episodes.indexOf(episodes[26]) + 1} </td> 
                             <td className="episode-title">{episodes[38]}</td>
                         </tr>
                         <tr>
-                            <td className="episode-number">Episode Number : {episodes.indexOf(episodes[34]) + 1} </td> 
-                            <td className="episode-title">{episodes[33]}</td>
+                            <td className="episode-number">Episode Number : {episodes.indexOf(episodes[27]) + 1} </td> 
+                            <td className="episode-title">{episodes[11]}</td>
                         </tr>
                         <tr>
-                            <td className="episode-number">Episode Number : {episodes.indexOf(episodes[35]) + 1} </td> 
-                            <td className="episode-title">{episodes[36]}</td>
+                            <td className="episode-number">Episode Number : {episodes.indexOf(episodes[28]) + 1} </td> 
+                            <td className="episode-title">{episodes[25]}</td>
                         </tr>
                         <tr>
-                            <td className="episode-number">Episode Number : {episodes.indexOf(episodes[36]) + 1} </td> 
-                            <td className="episode-title">{episodes[37]}</td>
-                        </tr>   
+                            <td className="episode-number">Episode Number : {episodes.indexOf(episodes[29]) + 1} </td> 
+                            <td className="episode-title">{episodes[15]}</td>
+                        </tr>
                         <tr>
-                            <td className="episode-number">Episode Number : {episodes.indexOf(episodes[37]) + 1} </td> 
+                            <td className="episode-number">Episode Number : {episodes.indexOf(episodes[30]) + 1} </td> 
+                            <td className="episode-title">{episodes[31]}</td>
+                        </tr>
+                        <tr>
+                            <td className="episode-number">Episode Number : {episodes.indexOf(episodes[31]) + 1} </td> 
                             <td className="episode-title">{episodes[35]}</td>
                         </tr>
                         <tr>
+                            <td className="episode-number">Episode Number : {episodes.indexOf(episodes[32]) + 1} </td> 
+                            <td className="episode-title">{episodes[3]}</td>
+                        </tr>
+                        <tr>
+                            <td className="episode-number">Episode Number : {episodes.indexOf(episodes[33]) + 1} </td> 
+                            <td className="episode-title">{episodes[16]}</td>
+                        </tr>
+                        <tr>
+                            <td className="episode-number">Episode Number : {episodes.indexOf(episodes[34]) + 1} </td> 
+                            <td className="episode-title">{episodes[39]}</td>
+                        </tr>
+                        <tr>
+                            <td className="episode-number">Episode Number : {episodes.indexOf(episodes[35]) + 1} </td> 
+                            <td className="episode-title">{episodes[9]}</td>
+                        </tr>
+                        <tr>
+                            <td className="episode-number">Episode Number : {episodes.indexOf(episodes[36]) + 1} </td> 
+                            <td className="episode-title">{episodes[18]}</td>
+                        </tr>   
+                        <tr>
+                            <td className="episode-number">Episode Number : {episodes.indexOf(episodes[37]) + 1} </td> 
+                            <td className="episode-title">{episodes[19]}</td>
+                        </tr>
+                        
+                        <tr>
                             <td className="episode-number">Episode Number : {episodes.indexOf(episodes[38]) + 1} </td> 
-                            <td className="episode-title">{episodes[27]}</td>
+                            <td className="episode-title">{episodes[20]}</td>
+                        </tr>
+                        <tr>
+                            <td className="episode-number">Episode Number : {episodes.indexOf(episodes[39]) + 1} </td> 
+                            <td className="episode-title">{episodes[21]}</td>
                         </tr>
                         </details>
                         <details>
-                            <summary>Season 4 </summary>
-                        <tr>
-                            <td className="episode-number">Episode Number : {episodes.indexOf(episodes[39]) + 1} </td> 
-                            <td className="episode-title">{episodes[48]}</td>
-                        </tr>
+                        <summary>Season 2</summary>
                         <tr>
                             <td className="episode-number">Episode Number : {episodes.indexOf(episodes[40]) + 1} </td> 
-                            <td className="episode-title">{episodes[44]}</td>
+                            <td className="episode-title">{episodes[64]}</td>
                         </tr>
                         <tr>
                             <td className="episode-number">Episode Number : {episodes.indexOf(episodes[41]) + 1} </td> 
-                            <td className="episode-title">{episodes[45]}</td>
+                            <td className="episode-title">{episodes[48]}</td>
                         </tr>
                         <tr>
                             <td className="episode-number">Episode Number : {episodes.indexOf(episodes[42]) + 1} </td> 
@@ -250,36 +245,160 @@ function Episodes() {
                         </tr>
                         <tr>
                             <td className="episode-number">Episode Number : {episodes.indexOf(episodes[43]) + 1} </td> 
-                            <td className="episode-title">{episodes[42]}</td>
+                            <td className="episode-title">{episodes[46]}</td>
                         </tr>
                         <tr>
                             <td className="episode-number">Episode Number : {episodes.indexOf(episodes[44]) + 1} </td> 
-                            <td className="episode-title">{episodes[49]}</td>
+                            <td className="episode-title">{episodes[71]}</td>
                         </tr>
                         <tr>
                             <td className="episode-number">Episode Number : {episodes.indexOf(episodes[45]) + 1} </td> 
-                            <td className="episode-title">{episodes[47]}</td>
+                            <td className="episode-title">{episodes[72]}</td>
                         </tr>
                         <tr>
                             <td className="episode-number">Episode Number : {episodes.indexOf(episodes[46]) + 1} </td> 
-                            <td className="episode-title">{episodes[39]}</td>
+                            <td className="episode-title">{episodes[63]}</td>
                         </tr>
                         <tr>
                             <td className="episode-number">Episode Number : {episodes.indexOf(episodes[47]) + 1} </td> 
-                            <td className="episode-title">{episodes[40]}</td>
+                            <td className="episode-title">{episodes[68]}</td>
                         </tr>
                         <tr>
                             <td className="episode-number">Episode Number : {episodes.indexOf(episodes[48]) + 1} </td> 
-                            <td className="episode-title">{episodes[46]}</td>
+                            <td className="episode-title">{episodes[77]}</td>
+                        </tr>
+                        <tr>
+                            <td className="episode-number">Episode Number : {episodes.indexOf(episodes[49]) + 1} </td> 
+                            <td className="episode-title">{episodes[41]}</td>
+                        </tr>
+                        <tr>
+                            <td className="episode-number">Episode Number : {episodes.indexOf(episodes[50]) + 1} </td> 
+                            <td className="episode-title">{episodes[56]}</td>
+                        </tr>
+                        <tr>
+                            <td className="episode-number">Episode Number : {episodes.indexOf(episodes[51]) + 1} </td> 
+                            <td className="episode-title">{episodes[50]}</td>
+                        </tr>
+                        <tr>
+                            <td className="episode-number">Episode Number : {episodes.indexOf(episodes[52]) + 1} </td> 
+                            <td className="episode-title">{episodes[53]}</td>
+                        </tr>
+                        <tr>
+                            <td className="episode-number">Episode Number : {episodes.indexOf(episodes[53]) + 1} </td> 
+                            <td className="episode-title">{episodes[67]}</td>
+                        </tr>
+                        <tr>
+                            <td className="episode-number">Episode Number : {episodes.indexOf(episodes[54]) + 1} </td> 
+                            <td className="episode-title">{episodes[75]}</td>
+                        </tr>
+                        <tr>
+                            <td className="episode-number">Episode Number : {episodes.indexOf(episodes[55]) + 1} </td> 
+                            <td className="episode-title">{episodes[42]}</td>
+                        </tr>
+                        <tr>
+                            <td className="episode-number">Episode Number : {episodes.indexOf(episodes[56]) + 1} </td> 
+                            <td className="episode-title">{episodes[45]}</td>
+                        </tr>
+                        <tr>
+                            <td className="episode-number">Episode Number : {episodes.indexOf(episodes[57]) + 1} </td> 
+                            <td className="episode-title">{episodes[76]}</td>
+                        </tr>
+                        <tr>
+                            <td className="episode-number">Episode Number : {episodes.indexOf(episodes[58]) + 1} </td> 
+                            <td className="episode-title">{episodes[62]}</td>
+                        </tr>
+                        <tr>
+                            <td className="episode-number">Episode Number : {episodes.indexOf(episodes[59]) + 1} </td> 
+                            <td className="episode-title">{episodes[66]}</td>
+                        </tr>
+                        <tr>
+                            <td className="episode-number">Episode Number : {episodes.indexOf(episodes[60]) + 1} </td> 
+                            <td className="episode-title">{episodes[70]}</td>
+                        </tr>
+                        <tr>
+                            <td className="episode-number">Episode Number : {episodes.indexOf(episodes[61]) + 1} </td> 
+                            <td className="episode-title">{episodes[55]}</td>
+                        </tr>
+                        <tr>
+                            <td className="episode-number">Episode Number : {episodes.indexOf(episodes[62]) + 1} </td> 
+                            <td className="episode-title">{episodes[78]}</td>
+                        </tr>
+                        <tr>
+                            <td className="episode-number">Episode Number : {episodes.indexOf(episodes[63]) + 1} </td> 
+                            <td className="episode-title">{episodes[47]}</td>
+                        </tr>
+                        <tr>
+                            <td className="episode-number">Episode Number : {episodes.indexOf(episodes[64]) + 1} </td> 
+                            <td className="episode-title">{episodes[54]}</td>
+                        </tr>
+                        <tr>
+                            <td className="episode-number">Episode Number : {episodes.indexOf(episodes[65]) + 1} </td> 
+                            <td className="episode-title">{episodes[73]}</td>
+                        </tr>
+                        <tr>
+                            <td className="episode-number">Episode Number : {episodes.indexOf(episodes[66]) + 1} </td> 
+                            <td className="episode-title">{episodes[69]}</td>
+                        </tr>
+                        <tr>
+                            <td className="episode-number">Episode Number : {episodes.indexOf(episodes[67]) + 1} </td> 
+                            <td className="episode-title">{episodes[74]}</td>
+                        </tr>
+                        <tr>
+                            <td className="episode-number">Episode Number : {episodes.indexOf(episodes[68]) + 1} </td> 
+                            <td className="episode-title">{episodes[49]}</td>
+                        </tr>
+                        <tr>
+                            <td className="episode-number">Episode Number : {episodes.indexOf(episodes[69]) + 1} </td> 
+                            <td className="episode-title">{episodes[65]}</td>
+                        </tr>
+                        <tr>
+                            <td className="episode-number">Episode Number : {episodes.indexOf(episodes[70]) + 1} </td> 
+                            <td className="episode-title">{episodes[51]}</td>
+                        </tr>
+                        <tr>
+                            <td className="episode-number">Episode Number : {episodes.indexOf(episodes[71]) + 1} </td> 
+                            <td className="episode-title">{episodes[79]}</td>
+                        </tr>
+                        <tr>
+                            <td className="episode-number">Episode Number : {episodes.indexOf(episodes[72]) + 1} </td> 
+                            <td className="episode-title">{episodes[44]}</td>
+                        </tr>
+                        <tr>
+                            <td className="episode-number">Episode Number : {episodes.indexOf(episodes[73]) + 1} </td> 
+                            <td className="episode-title">{episodes[40]}</td>
+                        </tr>
+                        <tr>
+                            <td className="episode-number">Episode Number : {episodes.indexOf(episodes[74]) + 1} </td> 
+                            <td className="episode-title">{episodes[52]}</td>
+                        </tr>
+                        <tr>
+                            <td className="episode-number">Episode Number : {episodes.indexOf(episodes[75]) + 1} </td> 
+                            <td className="episode-title">{episodes[57]}</td>
+                        </tr>
+                                              <tr>
+                            <td className="episode-number">Episode Number : {episodes.indexOf(episodes[76]) + 1} </td> 
+                            <td className="episode-title">{episodes[58]}</td>
+                        </tr>
+                        <tr>
+                            <td className="episode-number">Episode Number : {episodes.indexOf(episodes[77]) + 1} </td> 
+                            <td className="episode-title">{episodes[59]}</td>
+                        </tr>
+                        <tr>
+                            <td className="episode-number">Episode Number : {episodes.indexOf(episodes[78]) + 1} </td> 
+                            <td className="episode-title">{episodes[60]}</td>
+                        </tr>
+                         <tr>
+                            <td className="episode-number">Episode Number : {episodes.indexOf(episodes[79]) + 1} </td> 
+                            <td className="episode-title">{episodes[61]}</td>
                         </tr>
                         </details>
                         </>
-                        }
+                            }
                     </tbody>
                 </table>
             )
         }
-        </div>
-    )
+    </div>
+)
 }
 export default Episodes;
