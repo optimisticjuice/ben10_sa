@@ -127,10 +127,56 @@ details[open] ~ details {
   text-align: left;
 }
 
+/* Episode List Container */
+.episode-list {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+/* Episode Row - Replicates table row */
+.episode-row {
+  display: flex;
+  border-bottom: 1px solid rgba(41, 175, 59, 0.3);
+  transition: all 0.3s ease;
+}
+
+.episode-row:hover {
+  background: rgba(41, 175, 59, 0.1);
+  transform: translateX(5px);
+}
+
+/* Episode Number and Title - Replicates table cells */
+.episode-row .episode-number,
+.episode-row .episode-title {
+  padding: 1rem 1.5rem;
+  color: #ffffff;
+  font-size: 1.1rem;
+  border: 1px solid rgba(41, 175, 59, 0.2);
+  text-shadow: 0 0 5px rgba(41, 175, 59, 0.5);
+}
+
+/* Episode Number Cell */
+.episode-row .episode-number {
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  background: rgba(41, 175, 59, 0.1);
+  border-radius: 5px;
+  min-width: 150px;
+  flex-shrink: 0;
+}
+
+/* Episode Title Cell */
+.episode-row .episode-title {
+  color: #ffffff;
+  font-weight: 500;
+  text-align: left;
+  flex: 1;
+}
+
 /* Loading State */
 .loading-state {
   text-align: center;
-  color: #29af3b;
+  color: #ffffff;
   font-size: 2rem;
   font-weight: bold;
   text-shadow: 0 0 20px rgba(41, 175, 59, 0.8);
@@ -177,12 +223,13 @@ details[open]::before {
     padding: 1rem;
   }
   
-  .episodes-table td {
+  .episode-row .episode-number,
+  .episode-row .episode-title {
     padding: 0.8rem 1rem;
     font-size: 1rem;
   }
   
-  .episode-number {
+  .episode-row .episode-number {
     min-width: 100px;
   }
 }
@@ -197,12 +244,17 @@ details[open]::before {
     padding: 0.8rem;
   }
   
-  .episodes-table td {
+  .episode-row {
+    flex-direction: column;
+  }
+  
+  .episode-row .episode-number,
+  .episode-row .episode-title {
     padding: 0.6rem 0.8rem;
     font-size: 0.9rem;
   }
   
-  .episode-number {
+  .episode-row .episode-number {
     min-width: 80px;
   }
 }
