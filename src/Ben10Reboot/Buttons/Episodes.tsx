@@ -6,20 +6,22 @@ function Episodes() {
     
     const [loading, setLoading] = useState(true);
     const [episodes, setEpisodes] = useState<string[]>([]);
+    const [episodes5, setEpisodes5] = useState<string[]>([]);
 
   useEffect(() => {
     async function fetchEpisodes() {
       try {
-        // Categories for original series seasons
+        // Categories for seasons 1-4
        const categories = [
         "Category:Ben 10 Reboot Season 1 Episodes",
         "Category:Ben 10 Reboot Season 2 Episodes", 
         "Category:Ben 10 Reboot Season 3 Episodes",
         "Category:Ben 10 Reboot Season 4 Episodes"
     ];
-
+ 
         const allTitles: string[] = [];
-
+         const newTitles: string[] = [];
+        // Fetch seasons 1-4
         for (const cat of categories) {
           const url = buildApiUrl({
             action: "query",
@@ -42,8 +44,37 @@ function Episodes() {
           }
         }
 
-        // You now have titles, likely in season grouping order
+        // Separate fetch for Season 5 using main category
+        try {
+          const season5Url = buildApiUrl({
+            action: "query",
+            list: "categorymembers",
+            cmtitle: "Category:Ben 10 Reboot Episodes",
+            cmlimit: "max",
+          });
+
+          const season5Res = await fetch(season5Url);
+          const season5Json = await season5Res.json();
+
+          if (season5Json.query?.categorymembers) {
+            const season5Titles = season5Json.query.categorymembers.map(
+              (item: any) => item.title as string
+            );
+            
+            // Filter out episodes that are already in seasons 1-4 to get only Season 5
+            const existingTitles = new Set(allTitles);
+            const onlySeason5 = season5Titles.filter((title: string) => !existingTitles.has(title));
+            
+            // Add Season 5 episodes separately
+            newTitles.push(...onlySeason5);
+          }
+        } catch (season5Error) {
+          console.log("Season 5 fetch failed, but seasons 1-4 still work:", season5Error);
+        }
+
+        // You now have titles from seasons 1-4 + Season 5
         setEpisodes(allTitles);
+        setEpisodes5(newTitles);
       } catch (err) {
         console.error("Error fetching episodes:", err);
       } finally {
@@ -54,6 +85,10 @@ function Episodes() {
     fetchEpisodes();
   }, []);
   console.log(episodes);
+  console.log(episodes5);
+  
+  // Display episodes from Season 5 only
+  
   return (
     <div className="episodes-container">
         {
@@ -774,6 +809,45 @@ function Episodes() {
                         <tr>
                             <td className="episode-number">Episode Number : {episodes.indexOf(episodes[171]) + 1} </td> 
                             <td className="episode-title">{episodes[62]}</td>
+                        </tr>
+                        </details>
+                        <details>
+                        <summary>Season 5</summary>
+                        <tr>
+                            <td className="episode-number">Episode Number : 173 </td> 
+                            <td className="episode-title">{episodes5[7-1]}</td>
+                        </tr>
+                        <tr>
+                            <td className="episode-number">Episode Number : 174 </td> 
+                            <td className="episode-title">{episodes5[7-1]}</td>
+                        </tr>
+                        <tr>
+                            <td className="episode-number">Episode Number : 175 </td> 
+                            <td className="episode-title">{episodes5[7-1]}</td>
+                        </tr>
+                        <tr>
+                            <td className="episode-number">Episode Number : {episodes.indexOf(episodes[135]) + 1} </td> 
+                            <td className="episode-title">{episodes5[7]}</td>
+                        </tr>
+                        <tr>
+                            <td className="episode-number">Episode Number : {episodes.indexOf(episodes[136]) + 1} </td> 
+                            <td className="episode-title">{episodes5[7]}</td>
+                        </tr>
+                        <tr>
+                            <td className="episode-number">Episode Number : {episodes.indexOf(episodes[137]) + 1} </td> 
+                            <td className="episode-title">{episodes5[7]}</td>
+                        </tr>
+                        <tr>
+                            <td className="episode-number">Episode Number : {episodes.indexOf(episodes[138]) + 1} </td> 
+                            <td className="episode-title">{episodes5[0]}</td>
+                        </tr>
+                        <tr>
+                            <td className="episode-number">Episode Number : {episodes.indexOf(episodes[139]) + 1} </td> 
+                            <td className="episode-title">{episodes5[0]}</td>
+                        </tr>
+                        <tr>
+                            <td className="episode-number">Episode Number : {episodes.indexOf(episodes[140]) + 1} </td> 
+                            <td className="episode-title">{episodes5[0]}</td>
                         </tr>
                         </details>
                         </>
