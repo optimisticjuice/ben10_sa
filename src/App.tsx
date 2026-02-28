@@ -1,9 +1,15 @@
 import './App.css' // Import CSS for styling
+import { useEffect } from 'react'
 import { Ben10Thumbnails } from './components/Selection'
 import { Ben10Layout } from './components/Selection'
 import Navbar from './components/Navbar'
 import { useState } from 'react'
 function App() {
+    useEffect(() => {
+    fetch("http://localhost:5000")
+      .then(res => res.text())
+      .then(data => console.log(data));
+  }, []);
   const [selectedSeries, setSelectedSeries] = useState<"classic" | "alien-force" | "ultimate-alien" | "omniverse" | "reboot" | null>(null)
   return (
     <div className="App">
