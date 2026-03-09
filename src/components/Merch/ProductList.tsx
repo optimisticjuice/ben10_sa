@@ -53,7 +53,10 @@ function ProductList() {
             {product.variants && product.variants.length > 0 && (
               <p>From ${product.variants[0].retail_price}</p>
             )}
-            <button style={{ marginTop: '1rem', padding: '0.5rem 1rem', background: '#0066cc', color: 'white', border: 'none', borderRadius: '4px' }}>
+            <button 
+              onClick={() => window.location.href = `/product/${product.id}`}
+              style={{ marginTop: '1rem', padding: '0.5rem 1rem', background: '#0066cc', color: 'white', border: 'none', borderRadius: '4px', cursor: 'pointer' }}
+            >
               View Details / Add to Cart
             </button>
           </div>

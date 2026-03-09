@@ -1,10 +1,51 @@
 const PRINTFUL_API = "https://api.printful.com";
+const STRIPE_SECRET_KEY = process.env.STRIPE_SECRET_KEY;
+const STRIPE_PUBLISHABLE_KEY = process.env.STRIPE_PUBLISHABLE_KEY;
 
 const API_KEY = process.env.PRINTFUL_API_KEY;
 
 if (!API_KEY) {
   console.error("ERROR: PRINTFUL_API_KEY is missing from .env file!");
-  // You can throw here if you want the server to fail fast
+}
+
+if (!STRIPE_SECRET_KEY) {
+  console.error("ERROR: STRIPE_SECRET_KEY is missing from .env file!");
+}
+
+// Type definitions
+interface PrintfulProduct {
+  id: string;
+  name: string;
+  thumbnail_url?: string;
+  variants?: Array<{
+    id: number;
+    retail_price: string;
+    sku?: string;
+  }>;
+  description?: string;
+  images?: Array<{
+    url: string;
+  }>;
+}
+
+interface StripeCheckoutRequest {
+  productId: string;
+  variantId: number;
+  quantity: number;
+}
+
+interface StripeCheckoutResponse {
+  id: string;
+  object: string;
+  stripePublicKey: string;
+}
+
+interface PrintfulErrorResponse {
+  error: string;
+}
+
+interface StripeErrorResponse {
+  error: string;
 }
 
 const headers = {
@@ -115,6 +156,102 @@ Bun.serve({
       } catch (err: any) {
         return new Response(
           JSON.stringify({ error: "Error fetching catalog: " + err.message }),
+          { status: 500, headers: { ...corsHeaders, "Content-Type": "application/json" } }
+        );
+      }
+    }
+
+    // Get individual product by ID
+    if (url.pathname.startsWith("/products/") && req.method === "GET") {
+      const productId = url.pathname.split("/")[2];
+      
+      try {
+        // First try to get from synced products
+        const syncResponse = await fetch(`${PRINTFUL_API}/sync/products`, { headers });
+        const syncData = await syncResponse.json() as { result: PrintfulProduct[] };
+        
+        // Find product in synced products
+        const product = syncData.result?.find((p: PrintfulProduct) => p.id === productId);
+        
+        if (product) {
+          return new Response(JSON.stringify({ result: [product] }), {
+            headers: { ...corsHeaders, "Content-Type": "application/json" },
+          });
+        }
+        
+        // If not found in synced, try catalog
+        const catalogResponse = await fetch(`${PRINTFUL_API}/products/${productId}`, { headers });
+        if (catalogResponse.ok) {
+          const catalogProduct = await catalogResponse.json();
+          return new Response(JSON.stringify({ result: [catalogProduct] }), {
+            headers: { ...corsHeaders, "Content-Type": "application/json" },
+          });
+        }
+        
+        return new Response(
+          JSON.stringify({ error: "Product not found" }),
+          { status: 404, headers: { ...corsHeaders, "Content-Type": "application/json" } }
+        );
+      } catch (err: any) {
+        return new Response(
+          JSON.stringify({ error: "Error fetching product: " + err.message }),
+          { status: 500, headers: { ...corsHeaders, "Content-Type": "application/json" } }
+        );
+      }
+    }
+
+    // Create Stripe checkout session
+    if (url.pathname === "/create-checkout-session" && req.method === "POST") {
+      try {
+        const body = await req.json() as unknown as StripeCheckoutRequest;
+        const { productId, variantId, quantity } = body;
+        
+        // Get product details from Printful
+        const productResponse = await fetch(`${PRINTFUL_API}/products/${productId}`, { headers });
+        const product = await productResponse.json() as PrintfulProduct;
+        
+        // Create Stripe checkout session
+        const stripeResponse = await fetch("https://api.stripe.com/v1/checkout/sessions", {
+          method: "POST",
+          headers: {
+            Authorization: `Bearer ${STRIPE_SECRET_KEY}`,
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            payment_method_types: ["card"],
+            mode: "payment",
+            line_items: [{
+              price_data: {
+                currency: "usd",
+                product_data: {
+                  name: product.name,
+                  description: product.description || `Ben 10 Merch - ${product.name}`,
+                  images: product.thumbnail_url ? [product.thumbnail_url] : undefined,
+                },
+                unit_amount: Math.round(parseFloat(product.variants?.[0]?.retail_price.replace('$', '') || '0') * 100),
+              },
+              quantity: quantity,
+            }],
+            success_url: `http://localhost:4173/success`,
+            cancel_url: `http://localhost:4173/cancel`,
+          }),
+        });
+
+        if (!stripeResponse.ok) {
+          throw new Error("Failed to create Stripe session");
+        }
+
+        const stripeSession = await stripeResponse.json() as StripeCheckoutResponse;
+
+        return new Response(JSON.stringify({ 
+          sessionId: stripeSession.id,
+          stripePublicKey: STRIPE_PUBLISHABLE_KEY
+        }), {
+          headers: { ...corsHeaders, "Content-Type": "application/json" },
+        });
+      } catch (err: any) {
+        return new Response(
+          JSON.stringify({ error: "Error creating checkout session: " + err.message }),
           { status: 500, headers: { ...corsHeaders, "Content-Type": "application/json" } }
         );
       }
