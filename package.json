@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "prepare": "husky install && npm run build",
+    "prepare": "npm run build",
     "predeploy": "npm run build",
     "deploy": "vercel"
   },
