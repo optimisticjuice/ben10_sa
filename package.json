@@ -1,17 +1,20 @@
 {
   "name": "ben10",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
+
+  "homepage": "https://ben10.co.za",
+  
   "scripts": {
-    "dev": "vite",
-    "build": "tsc -b && vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
+    "dev": "bun run dev",
+    "build": "bun run build",
+    "deploy": "gh-pages -d dist"  
   },
   "dependencies": {
     "@sentry/react": "^10.40.0",
     "@sentry/tracing": "^7.120.4",
+    "gh-pages": "^6.3.0",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
     "react-router-dom": "^6.28.0"
