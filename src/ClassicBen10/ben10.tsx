@@ -1,6 +1,6 @@
 import "./ben10.css"
+import Aliens from "./Buttons/Aliens";
 import Episodes from "./Buttons/Episodes";
-import Merch from "./Buttons/Merch";
 import { useState } from 'react';
 
 function Ben10(){
@@ -10,8 +10,8 @@ function Ben10(){
         setActiveTab(activeTab === 'episodes' ? '' : 'episodes');
     };
     
-    const toggleMerch = () => {
-        setActiveTab(activeTab === 'merch' ? '' : 'merch');
+    const toggleAliens = () => {
+        setActiveTab(activeTab === 'aliens' ? '' : 'aliens');
     };
     
     return(
@@ -19,14 +19,14 @@ function Ben10(){
         <h1 className="ben10-title">Ben 10</h1>
         <div className="buttons">
         <button className="ben10-button" onClick={toggleEpisodes}>Episodes</button>
-        <button className="ben10-button" onClick={toggleMerch}>Merch</button>
+        <button className="ben10-button" onClick={toggleAliens}>Aliens</button>
         <button className="ben10-button">Play</button>
         <button className="ben10-button">Play</button>
         <button className="ben10-button">Play</button>
         </div>
         
         {activeTab === 'episodes' && <Episodes />}
-        {activeTab === 'merch' && <Merch />}
+        {activeTab === 'aliens' && <Aliens />}
         </>
     )
 }

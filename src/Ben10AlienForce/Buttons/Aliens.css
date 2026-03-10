@@ -1,0 +1,36 @@
+/* Default styles */
+.aliens-container {
+  padding: 20px;
+}
+
+/* Media query for screens less than 400px */
+@media (max-width: 399px) {
+  .aliens-container {
+    padding: 10px;
+  }
+  
+  .slideshow-card {
+    width: 59%;
+    margin: 10px 2rem;
+  }
+  
+  .alien-image {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .thumbnail-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+  }
+  
+  .thumbnail-image {
+    width: 100%;
+    height: auto;
+  }
+  
+  .search-input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}

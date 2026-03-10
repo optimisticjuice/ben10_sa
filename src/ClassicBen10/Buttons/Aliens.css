@@ -1,0 +1,114 @@
+.aliens-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 24px;
+  font-family: Arial, sans-serif;
+}
+
+.search-input {
+  width: 100%;
+  padding: 8px 12px;
+  margin-bottom: 24px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.slideshow-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  background-color: #fff;
+  margin-bottom: 24px;
+}
+
+.alien-name {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.alien-image {
+  width: 250px;
+  height: 250px;
+  object-fit: contain;
+  margin-bottom: 12px;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.nav-buttons button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #e0e0e0;
+  font-weight: bold;
+}
+
+.nav-buttons button:hover {
+  background-color: #c0c0c0;
+}
+
+.thumbnail-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+  gap: 12px;
+}
+
+.thumbnail-card {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 6px;
+  text-align: center;
+  cursor: pointer;
+  transition: border-color 0.2s;
+}
+
+.thumbnail-card:hover {
+  border-color: #888;
+}
+
+.active-thumbnail {
+  border-color: #007bff;
+}
+
+.thumbnail-image {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  margin-bottom: 4px;
+}
+
+.thumbnail-name {
+  font-size: 12px;
+  display: block;
+  word-break: break-word;
+}
+
+.no-aliens-container {
+  padding: 16px;        /* Tailwind: p-4 */
+  text-align: center;   /* Tailwind: text-center */
+}
+
+.no-aliens-input {
+  width: 100%;          /* Tailwind: w-full */
+  padding: 8px;         /* Tailwind: p-2 */
+  margin-bottom: 16px;  /* Tailwind: mb-4 */
+  border: 1px solid #ccc; /* Tailwind: border */
+  border-radius: 6px;      /* Tailwind: rounded */
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.no-aliens-text {
+  font-size: 16px;
+  color: #333;
+}
