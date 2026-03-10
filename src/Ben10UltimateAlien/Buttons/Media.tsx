@@ -94,10 +94,10 @@ const Media: React.FC = () => {
       <div className="filter-buttons">
       
         <button 
-          className={`filter-button ${filterType === "movies" ? "active" : ""}`}
-          onClick={() => setFilterType("movies")}
+          className={`filter-button ${filterType === "games" ? "active" : ""}`}
+          onClick={() => setFilterType("games")}
         >
-          Movies
+          Games
         </button>
        
       </div>
