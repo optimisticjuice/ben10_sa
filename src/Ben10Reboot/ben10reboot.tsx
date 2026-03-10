@@ -1,6 +1,7 @@
 import "./ben10reboot.css"
 import Aliens  from "./Buttons/Aliens";
 import Episodes  from "./Buttons/Episodes";
+import Media from "./Buttons/Media";
 import { useState } from 'react';
 
 function Ben10Reboot(){
@@ -13,6 +14,10 @@ function Ben10Reboot(){
     const toggleAliens = () => {
         setActiveTab(activeTab === 'aliens' ? '' : 'aliens');
     };
+
+     const toggleMedia = () => {
+        setActiveTab(activeTab === 'media' ? '' : 'media');
+    };
     
     return(
         <>
@@ -20,13 +25,14 @@ function Ben10Reboot(){
         <div className="buttons">
         <button className="ben10-button" onClick={toggleEpisodes}>Episodes</button>
         <button className="ben10-button" onClick={toggleAliens}>Aliens</button>
-        <button className="ben10-button">Play</button>
+        <button className="ben10-button" onClick={toggleMedia}>Media</button>
         <button className="ben10-button">Play</button>
         <button className="ben10-button">Play</button>
         </div>
         
         {activeTab === 'episodes' && <Episodes />}
         {activeTab === 'aliens' && <Aliens />}
+        {activeTab === 'media' && <Media />}
         </>
     )
 }

@@ -2,6 +2,7 @@ import "./ben10ultimatealien.css"
 import { useState } from 'react';
 import Episodes from "./Buttons/Episodes";
 import Aliens from "./Buttons/Aliens";
+import Media from "./Buttons/Media";
 function Ben10UltimateAlien(){
     const [activeTab, setActiveTab] = useState(''); // '', 'episodes', or 'merch'
     
@@ -9,11 +10,14 @@ function Ben10UltimateAlien(){
         setActiveTab(activeTab === 'episodes' ? '' : 'episodes');
     };
     
-    const toggleAliens = () => {
-        setActiveTab(activeTab === 'aliens' ? '' : 'aliens');
-    };
+        const toggleAliens = () => {
+            setActiveTab(activeTab === 'aliens' ? '' : 'aliens');
+        };
+        
+            const toggleMedia = () => {
+            setActiveTab(activeTab === 'media' ? '' : 'media');
+        };
     
-
 
     return(
         <>
@@ -23,7 +27,7 @@ function Ben10UltimateAlien(){
 
         <button className="ben10-button" onClick={toggleAliens}>Aliens</button>
 
-        <button className="ben10-button">Play</button>
+        <button className="ben10-button" onClick={toggleMedia}>Media</button>
 
         <button className="ben10-button">Play</button>
 
@@ -32,6 +36,7 @@ function Ben10UltimateAlien(){
         </div>
        {activeTab === 'episodes' && <Episodes />}
         {activeTab === 'aliens' && <Aliens />}
+        {activeTab === 'media' && <Media />}
         </>
     )
 }
