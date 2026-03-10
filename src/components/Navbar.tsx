@@ -1,4 +1,9 @@
 import './Navbar.css' // Import CSS for styling
+import ben10right from '/ben10right.png'
+import ben10alienforce from '/ben10alienforce.jpeg'
+import ultimate_alien from '/ultimate_alien.png'
+import ben10omniverse from '/ben10omniverse.jpg'
+import reboot from '/reboot.jpeg'
 
 // Define the props interface for Navbar component
 // onSelect: Required callback function that takes a Ben10Series parameter
@@ -11,7 +16,7 @@ function Navbar({ onSelect }: NavbarProps) {
     <div className="nav-container">
       {/* First clickable Ben10 image positioned at top left */}
       <img 
-        src="/ben10right.png" // First Ben10 image
+        src={ben10right} // First Ben10 image
         alt="Ben 10 Classic" // Descriptive alt text for accessibility
         className="top-right-image" // CSS class for positioning and styling
         onClick={() => onSelect("classic")} // Click handler to select classic series
@@ -29,7 +34,7 @@ function Navbar({ onSelect }: NavbarProps) {
 
       {/* Second clickable Ben10 image positioned to the right of the first */}
       <img 
-        src="/ben10alienforce.jpeg" // Second Ben10 image
+        src={ben10alienforce} // Second Ben10 image
         alt="Ben 10 Alien Force" // Descriptive alt text for accessibility
         className="second-ben10-image" // CSS class for positioning and styling
         onClick={() => onSelect("alien-force")} // Click handler to select alien-force series
@@ -47,7 +52,7 @@ function Navbar({ onSelect }: NavbarProps) {
 
       {/* Third clickable Ultimate Alien image positioned to the right of the second */}
       <img 
-        src="/ultimate_alien.png" // Ultimate Alien image
+        src={ultimate_alien} // Ultimate Alien image
         alt="Ben 10 Ultimate Alien" // Descriptive alt text for accessibility
         className="ultimate-alien-image" // CSS class for positioning and styling
         onClick={() => onSelect("ultimate-alien")} // Click handler to select ultimate-alien series
@@ -65,7 +70,7 @@ function Navbar({ onSelect }: NavbarProps) {
 
       {/* Fourth clickable Omniverse image positioned to the right of the Ultimate Alien image */}
       <img 
-        src="/ben10omniverse.jpg" // Omniverse image
+        src={ben10omniverse} // Omniverse image
         alt="Ben 10 Omniverse" // Descriptive alt text for accessibility
         className="omniverse-image" // CSS class for positioning and styling
         onClick={() => onSelect("omniverse")} // Click handler to select omniverse series
@@ -83,7 +88,7 @@ function Navbar({ onSelect }: NavbarProps) {
 
       {/* Fifth clickable Reboot image positioned to the right of the Omniverse image */}
       <img 
-        src="/reboot.jpeg" // Reboot image
+        src={reboot} // Reboot image
         alt="Ben 10 Reboot" // Descriptive alt text for accessibility
         className="reboot-image" // CSS class for positioning and styling
         onClick={() => onSelect("reboot")} // Click handler to select reboot series

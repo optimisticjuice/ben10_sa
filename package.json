@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "bun run dev",
     "build": "vite build",
-    "deploy": "gh-pages -d dist"  
+    "prepare": "husky install && npm run build",
+    "predeploy": "npm run build",
+    "deploy": "vercel"
   },
   "dependencies": {
     "@sentry/react": "^10.40.0",
