@@ -6,8 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "prepare": "npm run build",
-    "predeploy": "npm run build",
+    "prepare": "bun run build",
+    "predeploy": "bun run build",
     "deploy": "vercel"
   },
   "dependencies": {
