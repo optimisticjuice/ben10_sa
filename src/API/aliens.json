@@ -139,7 +139,7 @@
   },
   {
     "name": "Spidermonkey",
-    "image": "/Aliens/Spidermonkey.png",
+    "image": "/Aliens/spidermonkey.png",
     "special_ability": "Agility and webbing",
     "series": ["Ben 10: Alien Force","Omniverse","Reboot"]
   },
