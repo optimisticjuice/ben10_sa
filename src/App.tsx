@@ -19,7 +19,7 @@ function App() {
       <Ben10Thumbnails onSelect={setSelectedSeries} > <Navbar onSelect={setSelectedSeries} /></Ben10Thumbnails>
 
       <Ben10Layout series={selectedSeries} />
- {/* Should work now   */}
+ {/* Should work now bun  */}
     </div>
 
   )
