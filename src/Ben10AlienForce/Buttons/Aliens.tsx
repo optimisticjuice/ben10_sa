@@ -1,7 +1,7 @@
 import "./Aliens.css"
 // Aliens.tsx
 import React, { useState, useEffect } from "react";
-import spidermonkeyImage from "/Aliens/Spidermonkey.png";
+import spidermonkeyImage from "../../../public/Aliens/Spidermonkey.png";
 
 // Type for an alien
 interface Alien {
