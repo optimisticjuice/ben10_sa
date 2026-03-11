@@ -1,7 +1,6 @@
 import "./Aliens.css"
 // Aliens.tsx
 import React, { useState, useEffect } from "react";
-import spidermonkeyImage from "../../../public/Aliens/Spidermonkey.png";
 
 // Type for an alien
 interface Alien {
@@ -92,7 +91,7 @@ const Aliens: React.FC = () => {
       <div className="slideshow-card">
         <h2 className="alien-name">{currentAlien.name}</h2>
         <img
-          src={currentAlien.name === "Spidermonkey" ? spidermonkeyImage : currentAlien.image}
+          src={currentAlien.image}
           alt={currentAlien.name}
           className="alien-image"
         />
@@ -121,7 +120,7 @@ const Aliens: React.FC = () => {
             onClick={() => setCurrentIndex(idx)}
           >
             <img
-              src={alien.name === "Spidermonkey" ? spidermonkeyImage : alien.image}
+              src={alien.image}
               alt={alien.name}
               className="thumbnail-image"
             />
